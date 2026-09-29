@@ -1,0 +1,6 @@
+{
+  "name": "NSDJ-DMS - National Secure Digital Justice & Document Management Platform",
+  "description": "Government-grade, centralized, multilingual, blockchain-backed and AI-assisted digital document, case, evidence and investigation management system for law enforcement, forensics, prosecution and judiciary.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

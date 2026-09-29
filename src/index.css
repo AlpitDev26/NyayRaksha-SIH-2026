@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warm White-Beige Canvas & Surfaces */
+  --color-slate-950: #f8f6f0; /* Warm linen-beige canvas */
+  --color-slate-900: #ffffff; /* Crisp pure white card surface */
+  --color-slate-850: #f3eee3; /* Soft warm alabaster */
+  --color-slate-800: #e7dfcf; /* Elegant warm beige/sandstone border */
+  --color-slate-750: #ddd3be; /* Subtle interactive border */
+  --color-slate-700: #cfc2a8; /* Defined border */
+  --color-slate-600: #9e8d75; /* Warm stone neutral */
+  --color-slate-500: #7a6b57; /* Refined muted text */
+  --color-slate-400: #584a39; /* High-contrast secondary dark text */
+  --color-slate-300: #3c3123; /* Dark espresso body text */
+  --color-slate-200: #282017; /* Deep charcoal dark text */
+  --color-slate-100: #18130d; /* Primary commanding dark title text */
+  --color-slate-50:  #0a0805; /* Black accent */
+
+  /* Soft Pastel Tints for Light-Beige Theme Banners */
+  --color-blue-950: #f0f6ff;
+  --color-blue-900: #e0edff;
+  --color-blue-400: #1d4ed8;
+  --color-blue-300: #1e40af;
+
+  --color-emerald-950: #f0fdf4;
+  --color-emerald-900: #dcfce7;
+  --color-emerald-400: #15803d;
+  --color-emerald-300: #166534;
+
+  --color-amber-950: #fffbeb;
+  --color-amber-900: #fef3c7;
+  --color-amber-400: #b45309;
+  --color-amber-300: #92400e;
+  --color-amber-500: #d97706;
+
+  --color-red-950: #fef2f2;
+  --color-red-900: #fee2e2;
+  --color-red-400: #b91c1c;
+  --color-red-300: #991b1b;
+  --color-red-500: #dc2626;
+  --color-red-600: #b91c1c;
+
+  --color-purple-950: #faf5ff;
+  --color-purple-900: #f3e8ff;
+  --color-purple-400: #6d28d9;
+  --color-purple-300: #5b21b6;
+  --color-purple-600: #7c3aed;
+
+  --color-teal-950: #f0fdfa;
+  --color-teal-900: #ccfbf1;
+  --color-teal-400: #0f766e;
+  --color-teal-300: #115e59;
+  --color-teal-600: #0d9488;
+
+  --color-indigo-950: #eef2ff;
+  --color-indigo-900: #e0e7ff;
+  --color-indigo-400: #4338ca;
+  --color-indigo-300: #3730a3;
+
+  --color-cyan-950: #ecfeff;
+  --color-cyan-900: #cffafe;
+  --color-cyan-400: #0e7490;
+  --color-cyan-300: #155e75;
+
+  --color-rose-950: #fff1f2;
+  --color-rose-900: #ffe4e6;
+  --color-rose-400: #be123c;
+  --color-rose-300: #9f1239;
+
+  --color-beige-50: #fdfbf7;
+  --color-beige-100: #f8f5ee;
+  --color-beige-200: #eee7d7;
+  --color-beige-300: #dfd4be;
+  --color-beige-400: #cab89b;
+  --color-beige-500: #b29c78;
+  --color-beige-600: #967f59;
+  --color-beige-700: #796342;
+  --color-beige-800: #5a482f;
+  --color-beige-900: #3b2e1c;
+  --color-beige-950: #1e160c;
+}
+
+body {
+  background-color: var(--color-slate-950);
+  color: #241c14;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Card & Heading Typography refinement on White-Beige surfaces */
+h1.text-white, h2.text-white, h3.text-white, h4.text-white, h5.text-white, h6.text-white {
+  color: #17120d !important;
+}
+
+div.text-white:not(button *):not([class*="bg-blue-"]):not([class*="bg-emerald-"]):not([class*="bg-red-"]):not([class*="bg-purple-"]):not([class*="bg-amber-"]):not([class*="bg-teal-"]):not([class*="bg-indigo-"]),
+span.text-white:not(button *):not([class*="bg-blue-"]):not([class*="bg-emerald-"]):not([class*="bg-red-"]):not([class*="bg-purple-"]):not([class*="bg-amber-"]):not([class*="bg-teal-"]):not([class*="bg-indigo-"]),
+p.text-white {
+  color: #241c14 !important;
+}
+
+/* Ensure solid action buttons maintain high-contrast crisp white typography */
+button[class*="bg-blue-"],
+button[class*="bg-emerald-"],
+button[class*="bg-purple-"],
+button[class*="bg-red-"],
+button[class*="bg-amber-600"],
+button[class*="bg-teal-"],
+button[class*="bg-indigo-"],
+button[class*="bg-cyan-600"],
+button[class*="bg-rose-"] {
+  color: #ffffff !important;
+}
+
+button[class*="bg-blue-"] *,
+button[class*="bg-emerald-"] *,
+button[class*="bg-purple-"] *,
+button[class*="bg-red-"] *,
+button[class*="bg-teal-"] *,
+button[class*="bg-indigo-"] * {
+  color: #ffffff !important;
+}
+
+/* Clean Input Field Styling for White-Beige Aesthetic */
+input, select, textarea {
+  background-color: #ffffff !important;
+  color: #1c1712 !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #8c7d6b !important;
+}
+
+/* Custom Aesthetic Warm Linen Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f4efe4;
+}
+::-webkit-scrollbar-thumb {
+  background: #c8bea9;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #aa9e87;
+}
+
+/* Card Elevation Shadow */
+.card-shadow {
+  box-shadow: 0 1px 3px 0 rgba(40, 30, 15, 0.05), 0 1px 2px -1px rgba(40, 30, 15, 0.05);
+}
